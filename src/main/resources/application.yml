@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+zoeyun:
+  mypays:
+    clientId:
+    clientSecret:
+    rsaPubKey:
+    rsaPriKey:
+    merchantCode:
+    channelCode:
+
+
