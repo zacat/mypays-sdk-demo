@@ -1,9 +1,9 @@
 package com.zoeyun.mypays.sdk.controller;
 
 import com.zoeyun.mypays.sdk.bean.request.MposCreateRequest;
-import com.zoeyun.mypays.sdk.bean.request.MposGetRequest;
+import com.zoeyun.mypays.sdk.bean.request.MposQueryRequest;
 import com.zoeyun.mypays.sdk.bean.result.MposCreateResult;
-import com.zoeyun.mypays.sdk.bean.result.MposGetResult;
+import com.zoeyun.mypays.sdk.bean.result.MposQueryResult;
 import com.zoeyun.mypays.sdk.configuration.MypaysPropeties;
 import com.zoeyun.mypays.sdk.service.MypaysService;
 import lombok.SneakyThrows;
@@ -52,7 +52,7 @@ public class MposController {
     @SneakyThrows
     @RequestMapping("queryOrder")
     public MposQueryResult queryOrder() {
-        MposQueryResult request = MposQueryResult
+        MposQueryRequest request = MposQueryRequest
                 .newBuilder()
                 .clientOrderId(String.valueOf(new Date().getTime()))
                 .build();
